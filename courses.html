@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeX</title>
+  <link rel="stylesheet" href="stylepage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CodeX</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#" onmouseover="document.getElementById('resources').style.display='block'">Resources</a></li>
+            </ul>
+            <div>
+                <button class="join-btn">Join For Free</button>
+                <button class="login-btn">Login</button>
+            </div>
+        </nav>
+        <hr style="margin-bottom: -10px; height: 2px; border: none; background-color: black; width: 100vw; margin-left: -2em;">
+        <div id="resources"  onmouseleave="document.getElementById('resources').style.display='none'">
+            <div id="resources-box">
+                <div class="links">
+                    <a href="courses.html">Zero to Hero: Learn Coding Basics</a>
+                    <a href="courses.html">HTML & CSS Crash Course</a>
+                    <a href="courses.html">Python 101: Start Your Coding Journey</a>
+                    <a href="courses.html">Mastering Databases: SQL & Beyond</a>
+                    <a href="courses.html">Object-Oriented Programming with Java</a>
+                </div>
+                <div class="featured">
+                    <h3>Featured from Blog</h3>
+                    <div class="article">
+                        <div><img src="images/blog2.png" alt="blog image"></div>
+                        <div>
+                            <h3>10 Tips for Learning JavaScript</h3>
+                            <p>Master JavaScript with these simple tips and tricks to enhance your web development skills</p>
+                            <a href="blog.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="courses">
+        <h1 class="title">Courses</h1>
+        <p  class="description">Explore our diverse coding courses for beginners.</p>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="images/lcb.jpeg" alt="Course Image">
+                <h3>Zero to Hero: Learn Coding Basics</h3>
+                <p>Beginner</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/hccc.jpeg" alt="Course Image">
+                <h3>HTML & CSS Crash Course</h3>
+                <p>Beginner</p>
+                <button class="enroll-btn" onclick="window.location.href = 'course1.html';">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/python.jpeg" alt="Course Image">
+                <h3>Python 101: Start Your Coding Journey</h3>
+                <p>Beginner</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/databases.jpeg" alt="Course Image">
+                <h3>Mastering Databases: SQL & Beyond</h3>
+                <p>intermediate</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="images/java.jpeg" alt="Course Image">
+                <h3>Object-Oriented Programming with Java</h3>
+                <p>intermediate</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/gdb.jpeg" alt="Course Image">
+                <h3>Game Development Basics</h3>
+                <p>intermediate</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/ml.jpeg" alt="Course Image">
+                <h3>AI & Machine Learning Essentials</h3>
+                <p>Advanced</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/dsa.jpeg" alt="Course Image">
+                <h3>Data Structures and Algorithms Mastery</h3>
+                <p>Advanced</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+    </section>   
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <strong>CodeX</strong>
+            </div>
+            <div class="footer-section">
+                <strong>Quick Links</strong>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Resources</strong>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="pp.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Connect with Us</strong>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://linkedin.in">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Subscribe</strong>
+                <p>Subscribe our newsletter for the latest updates and coding tips.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </form>
+                <p>By continuing you agree to Privacy Policy and receiver updates.</p>
+            </div>
+        </div>
+        <hr style="margin: 0px; height: 1px; border: none; background-color: white;margin-top: 50px;">
+        <div class="footer-bottom">
+            <div>&copy; 2024 CodeX. All Rights Reserved.</div>
+            <a href="tos.html">Terms of Service</a>
+            <a href="cookie.html">Cookie Settings</a>
+        </div>
+    </div>
+</body>
+</html>

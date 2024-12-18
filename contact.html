@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeX</title>
+  <link rel="stylesheet" href="stylepage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CodeX</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#" onmouseover="document.getElementById('resources').style.display='block'">Resources</a></li>
+            </ul>
+            <div>
+                <button class="join-btn">Join For Free</button>
+                <button class="login-btn">Login</button>
+            </div>
+        </nav>
+        <hr style="margin-bottom: -10px; height: 2px; border: none; background-color: black; width: 100vw; margin-left: -2em;">
+        <div id="resources"  onmouseleave="document.getElementById('resources').style.display='none'">
+            <div id="resources-box">
+                <div class="links">
+                    <a href="courses.html">Zero to Hero: Learn Coding Basics</a>
+                    <a href="courses.html">HTML & CSS Crash Course</a>
+                    <a href="courses.html">Python 101: Start Your Coding Journey</a>
+                    <a href="courses.html">Mastering Databases: SQL & Beyond</a>
+                    <a href="courses.html">Object-Oriented Programming with Java</a>
+                </div>
+                <div class="featured">
+                    <h3>Featured from Blog</h3>
+                    <div class="article">
+                        <div><img src="images/blog2.png" alt="blog image"></div>
+                        <div>
+                            <h3>10 Tips for Learning JavaScript</h3>
+                            <p>Master JavaScript with these simple tips and tricks to enhance your web development skills</p>
+                            <a href="blog.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="contact-section">
+        <div class="container">
+        <h1 class="title">Contact Us</h1>
+        <p class="description">
+            Have questions or need help? Feel free to reach out to us. We'd love to hear from you!
+        </p>
+        
+        <div class="contact-form">
+            <h2 class="form-title">Get in Touch</h2>
+            <form>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    
+        <div class="contact-info">
+            <h2 class="info-title">Other Ways to Contact Us</h2>
+            <ul class="info-list">
+            <li><strong>Phone:</strong> +91 9876543210</li>
+            <li><strong>Email:</strong> support@codex.com</li>
+            <li><strong>Address:</strong> 2nd Floor, Codex Solutions, Shree Ram Estate, Bishon Sarup Colony, Panipat, Haryana 132103</li>
+            </ul>
+        </div>
+    
+        <div class="map">
+            <h2 class="map-title">Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89028.2927066076!2d76.90620435442494!3d29.397562128150028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dda4a95555555%3A0xa9c2ca8744723218!2sCodex%20Solutions!5e0!3m2!1sen!2sin!4v1733921142016!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </section>
+      
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <strong>CodeX</strong>
+            </div>
+            <div class="footer-section">
+                <strong>Quick Links</strong>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Resources</strong>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="pp.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Connect with Us</strong>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://linkedin.in">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Subscribe</strong>
+                <p>Subscribe our newsletter for the latest updates and coding tips.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </form>
+                <p>By continuing you agree to Privacy Policy and receiver updates.</p>
+            </div>
+        </div>
+        <hr style="margin: 0px; height: 1px; border: none; background-color: white;margin-top: 50px;">
+        <div class="footer-bottom">
+            <div>&copy; 2024 CodeX. All Rights Reserved.</div>
+            <a href="tos.html">Terms of Service</a>
+            <a href="cookie.html">Cookie Settings</a>
+        </div>
+    </div>
+</body>
+</html>

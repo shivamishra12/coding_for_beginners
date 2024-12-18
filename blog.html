@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeX</title>
+  <link rel="stylesheet" href="stylepage.css">
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CodeX</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#" onmouseover="document.getElementById('resources').style.display='block'">Resources</a></li>
+            </ul>
+            <div>
+                <button class="join-btn">Join For Free</button>
+                <button class="login-btn">Login</button>
+            </div>
+        </nav>
+        <hr style="margin-bottom: -10px; height: 2px; border: none; background-color: black; width: 100vw; margin-left: -2em;">
+        <div id="resources"  onmouseleave="document.getElementById('resources').style.display='none'">
+            <div id="resources-box">
+                <div class="links">
+                    <a href="courses.html">Zero to Hero: Learn Coding Basics</a>
+                    <a href="courses.html">HTML & CSS Crash Course</a>
+                    <a href="courses.html">Python 101: Start Your Coding Journey</a>
+                    <a href="courses.html">Mastering Databases: SQL & Beyond</a>
+                    <a href="courses.html">Object-Oriented Programming with Java</a>
+                </div>
+                <div class="featured">
+                    <h3>Featured from Blog</h3>
+                    <div class="article">
+                        <div><img src="images/blog2.png" alt="blog image"></div>
+                        <div>
+                            <h3>10 Tips for Learning JavaScript</h3>
+                            <p>Master JavaScript with these simple tips and tricks to enhance your web development skills</p>
+                            <a href="blog.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <img class="bgimg" src="images/blogheroimg.webp" alt="hero">
+        <div class="herotext">
+            <h1>Exploring the Wonders of Programming</h1>
+            <p>Welcome to our coding community, where beginners can thrive! Our free courses empower you to learn coding at your own pace, opening doors</p>
+        </div>
+    </section>
+
+    <section class="blog-page">
+        <div class="container">
+        <h1 class="title">Blog</h1>
+        <p class="description">Dive into our latest articles, tutorials, and insights on programming and technology.</p>
+        
+        <div class="blog-cards">
+            <div class="blog-card">
+            <img src="images/blog1.png" alt="Getting Started with Python">
+            <h3>Getting Started with Python : For Beginners</h3>
+            <p class="author">By Ankit Verma</p>
+            <p class="snippet">Learn how to start coding with Python, one of the most beginner-friendly programming languages.</p>
+            <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="blog-card">
+            <img src="images/blog2.png" alt="10 Tips for Learning JavaScript">
+            <h3>10 Tips for Learning JavaScript</h3>
+            <p class="author">By Priya Sharma</p>
+            <p class="snippet">Master JavaScript with these simple tips and tricks to enhance your web development skills.</p>
+            <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="blog-card">
+            <img src="images/blog3.jpg" alt="Why Machine Learning is the Future">
+            <h3>Why Machine Learning is the Future</h3>
+            <p class="author">By Ravi Singh</p>
+            <p class="snippet">Discover the importance of machine learning and how it’s transforming industries worldwide.</p>
+            <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="blog-card">
+            <img src="images/blog4.jpg" alt="Top 5 Coding Tools for Beginners">
+            <h3>Top 5 Coding Tools for Beginners</h3>
+            <p class="author">By Sneha Mehta</p>
+            <p class="snippet">Get to know the essential tools that will help you kickstart your coding journey.</p>
+            <button class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        </div>
+    </section>
+      
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <strong>CodeX</strong>
+            </div>
+            <div class="footer-section">
+                <strong>Quick Links</strong>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Resources</strong>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="pp.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Connect with Us</strong>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://linkedin.in">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Subscribe</strong>
+                <p>Subscribe our newsletter for the latest updates and coding tips.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </form>
+                <p>By continuing you agree to Privacy Policy and receiver updates.</p>
+            </div>
+        </div>
+        <hr style="margin: 0px; height: 1px; border: none; background-color: white;margin-top: 50px;">
+        <div class="footer-bottom">
+            <div>&copy; 2024 CodeX. All Rights Reserved.</div>
+            <a href="tos.html">Terms of Service</a>
+            <a href="cookie.html">Cookie Settings</a>
+        </div>
+    </div>
+</body>
+</html>

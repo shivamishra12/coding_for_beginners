@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS crash course</title>
+    <link rel="stylesheet" href="stylepage.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem;
+        }
+
+        .video-section {
+            flex: 2;
+            margin-right: 1rem;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-section video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .side-section {
+            flex: 1;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .side-section h3 {
+            margin-top: 0;
+        }
+
+        .notes {
+            margin-top: 1rem;
+        }
+
+        .notes textarea {
+            width: 100%;
+            height: 150px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .resources {
+            margin-top: 2rem;
+        }
+
+        .resources a {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .resources a:hover {
+            text-decoration: underline;
+        }
+
+        .syllabus {
+            text-align: left;
+        }
+
+        .syllabus h3{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">CodeX</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#" onmouseover="document.getElementById('resources').style.display='block'">Resources</a></li>
+            </ul>
+            <div>
+                <button class="join-btn">Join For Free</button>
+                <button class="login-btn">Login</button>
+            </div>
+        </nav>
+        <hr style="margin-bottom: -10px; height: 2px; border: none; background-color: black;">
+        <div id="resources"  onmouseleave="document.getElementById('resources').style.display='none'">
+            <div id="resources-box">
+                <div class="links">
+                    <a href="courses.html">Zero to Hero: Learn Coding Basics</a>
+                    <a href="courses.html">HTML & CSS Crash Course</a>
+                    <a href="courses.html">Python 101: Start Your Coding Journey</a>
+                    <a href="courses.html">Mastering Databases: SQL & Beyond</a>
+                    <a href="courses.html">Object-Oriented Programming with Java</a>
+                </div>
+                <div class="featured">
+                    <h3>Featured from Blog</h3>
+                    <div class="article">
+                        <div><img src="images/blog2.png" alt="blog image"></div>
+                        <div>
+                            <h3>10 Tips for Learning JavaScript</h3>
+                            <p>Master JavaScript with these simple tips and tricks to enhance your web development skills</p>
+                            <a href="blog.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="container">
+    <div class="video-section">
+        <iframe width="678" height="391" src="https://www.youtube.com/embed/MBlkKE0GYGg" title="HTML and CSS For Absolute Beginners | 2024 Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="resources">
+            <h3>Resources</h3>
+            <a href="#">Download Slides</a>
+            <a href="#">Download Code Examples</a>
+        </div>
+    </div>
+
+    <!-- Side Section -->
+    <div class="side-section">
+        <div class="notes">
+            <h3>Notes</h3>
+            <textarea placeholder="Write your notes here..."></textarea>
+        </div>
+
+        <div class="syllabus">
+            <h3>Course Syllabus</h3>
+            <ul>
+                <li>Introduction to Front-End Development
+                <ul>
+                    <li>Overview of HTML, CSS, and JavaScript working together [00:01]</li>
+                </ul>
+                </li>
+                <li>HTML Fundamentals
+                <ul>
+                    <li>Using emit abbreviation for boilerplate code in HTML [06:45]</li>
+                    <li>Understanding HTML nesting and different types of tags [13:42]</li>
+                    <li>Creating a clickable logo using HTML and CSS [20:11]</li>
+                    <li>Introduction to semantic tags and H1 element in HTML [32:43]</li>
+                    <li>Extra white space in HTML and primary call-to-action elements [34:44]</li>
+                </ul>
+                </li>
+                <li>CSS Basics
+                <ul>
+                    <li>Building layouts with CSS [02:18]</li>
+                    <li>CSS color and selector basics [41:06]</li>
+                    <li>Specifying font family and usage of CSS classes in HTML [45:15]</li>
+                </ul>
+                </li>
+                <li>Responsive Design Principles
+                <ul>
+                    <li>Mobile-first CSS design approach [47:27]</li>
+                    <li>Implementing media queries for responsive web design [1:36:28]</li>
+                    <li>Adjusting margins and using utility classes for responsive design [1:38:34]</li>
+                </ul>
+                </li>
+                <li>Styling Techniques
+                <ul>
+                    <li>Using display Flex and justify content to align elements in HTML [53:52]</li>
+                    <li>Positioning elements using z-index and styling elements for specific positions and sizes [1:00:15]</li>
+                    <li>Styling list items and nested elements using pseudo-selectors in CSS [1:07:02]</li>
+                    <li>Styling borders, buttons, and navigation in HTML and CSS [1:42:51]</li>
+                    <li>Adjusting styling properties for desktop view [1:45:03]</li>
+                </ul>
+                </li>
+                <li>JavaScript Basics
+                <ul>
+                    <li>Naming variables in JavaScript using camel case [1:17:20]</li>
+                    <li>Enhancing user experience and functionality [1:23:48]</li>
+                </ul>
+                </li>
+                <li>User Interface Elements
+                <ul>
+                    <li>Setting up a clickable hamburger menu using HTML and CSS [1:26:20]</li>
+                    <li>Creating a horizontal navigation with an unordered list [1:28:30]</li>
+                    <li>Hiding navigation on phone view using transform property [1:13:22]</li>
+                </ul>
+                </li>
+                <li>Accessibility Considerations
+                <ul>
+                    <li>Understanding WCAG contrast in design [1:11:22]</li>
+                </ul>
+                </li>
+                <li>Additional Styling Techniques
+                <ul>
+                    <li>Understanding specificity in CSS [1:51:46]</li>
+                    <li>Display inline-block and width of auto in CSS [1:56:17]</li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <strong>CodeX</strong>
+        </div>
+        <div class="footer-section">
+            <strong>Quick Links</strong>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <strong>Resources</strong>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="pp.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <strong>Connect with Us</strong>
+            <ul>
+                <li><a href="https://facebook.com">Facebook</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
+                <li><a href="https://linkedin.in">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <strong>Subscribe</strong>
+            <p>Subscribe our newsletter for the latest updates and coding tips.</p>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </form>
+            <p>By continuing you agree to Privacy Policy and receiver updates.</p>
+        </div>
+    </div>
+    <hr style="margin: 0px; height: 1px; border: none; background-color: white;margin-top: 50px;">
+    <div class="footer-bottom">
+        <div>&copy; 2024 CodeX. All Rights Reserved.</div>
+        <a href="tos.html">Terms of Service</a>
+        <a href="cookie.html">Cookie Settings</a>
+    </div>
+</div>
+
+</body>
+</html>
